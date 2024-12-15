@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corazones con Audio e Imágenes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Contenedor del corazón principal -->
+  <div class="heart-container">
+    <div class="heart" id="heart">
+      <span>click</span>
+    </div>
+  </div>
+
+  <!-- Corazones adicionales con audios -->
+  <div class="audio-hearts">
+    <div class="audio-heart" data-audio="audio1.mp3" data-image="images/logo1.png"></div>
+    <div class="audio-heart" data-audio="audio2.mp3" data-image="images/logo2.jpg"></div>
+    <div class="audio-heart" data-audio="audio3.mp3" data-image="images/logo3.png"></div>
+    <div class="audio-heart" data-audio="audio4.mp3" data-image="images/logo4.jpg"></div>
+  </div>
+
+  <!-- Contenedor de la imagen que aparecerá -->
+  <div id="image-container" class="image-container" style="display: none;">
+    <img id="image-display" src="" alt="Imagen personalizada" />
+  </div>
+
+  <!-- Audios (escondidos, solo se reproducen al hacer clic) -->
+  <audio id="audio-player" style="display: none;"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+    
